@@ -20,27 +20,27 @@ If you are cloning the repo for the first time
 
 ### Configuration
 
-[ project-name ] __ [ configuration  ]__ [ configuration-description-here ]
+[ project-name ] __ configuration __ [ configuration-description-here ]
 
 ### Feature
 
 New 
 
-[ project-name ] __ [ feature-new ] __ [ feature-description-here ]
+[ project-name ] __ feature-new __ [ feature-description-here ]
 
 Update
 
-[ project-name ] __ [ feature-update ] __ [ feature-description-here ]
+[ project-name ] __ feature-update __ [ feature-description-here ]
 
 ### Fix
-[ project-name ] __ [ fix ] __ [ fix-description-here ]
+[ project-name ] __ fix __ [ fix-description-here ]
 
 ## Managing submodules
 
 ### Add submodule
 
 _./billing-app_
-$ git submodule add [repositoryURL](http://github.com/stefafrontani/billing-app-web)
+    $ git submodule add [repositoryURL](http://github.com/stefafrontani/billing-app-web)
 
 ### Track specific branch from submodule
 Follow these steps:
