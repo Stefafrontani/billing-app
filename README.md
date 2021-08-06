@@ -26,11 +26,11 @@ If you are cloning the repo for the first time
 
 New 
 
-[ project-name ] __ feature-new __ [ feature-description-here ]
+[ project-name ] __ feature--new __ [ feature-description-here ]
 
 Update
 
-[ project-name ] __ feature-update __ [ feature-description-here ]
+[ project-name ] __ feature--update __ [ feature-description-here ]
 
 ### Fix
 [ project-name ] __ fix __ [ fix-description-here ]
