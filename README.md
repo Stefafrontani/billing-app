@@ -56,9 +56,11 @@ Follow these steps:
     $ git submodule update --init --recursive --remote
 
 3- Staged the changes:
+
     $ git add .
 
 4- Commit the changes:
+
     $ git commit -m ""
 
 5- Push the changes
@@ -69,14 +71,17 @@ Follow these steps:
 Follow these steps:
 
 1- Go to submodule:
+
     $ cd path/to/submodule
 
 2- Make the changes as one would do in any repository
 
 3- Stage changes:
+
     $ git add .
 
 4- Commit changes:
+
     $ git commit -m "commit message"
 
 5- Push changes
@@ -84,12 +89,15 @@ Follow these steps:
 6- Merge
 
 7- Go to root repository _billing-app_:
+
     $ cd path/to/root
 
 8- Stage changes:
+
     $ git add . 
 
 9- Commit changes:
+
     $ git commit -m "commit message"
 
 10- Push changes
