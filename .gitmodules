@@ -1,4 +1,4 @@
 [submodule "billing-app-web"]
 	path = billing-app-web
 	url = https://github.com/Stefafrontani/billing-app-web
-	branch = develop
+	branch = master
