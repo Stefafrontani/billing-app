@@ -35,6 +35,10 @@ Update
 ### Fix
 [ project-name ] __ fix __ [ fix-description-here ]
 
+### Submodule update
+
+[ rootRepository ] __ [ submoduleRepository ] __ update
+
 ## Managing submodules
 
 ### Add submodule
@@ -66,7 +70,6 @@ Follow these steps:
 5- Push the changes
 
 
-
 ### Make change to submodule
 Follow these steps:
 
@@ -92,7 +95,11 @@ Follow these steps:
 
     $ cd path/to/root
 
-8- Stage changes:
+8- Create branch with naming convention
+
+    $ git checkout -b 
+
+9- Stage changes:
 
     $ git add . 
 
