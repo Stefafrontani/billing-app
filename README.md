@@ -51,15 +51,17 @@ Follow these steps:
     
     1.1- Create a branch for the work to be done (not neccesary)
 
-2- Staged the changes: $ git add .
-
-3- Commit the changes: $ git commit -m ""
-
-4- Push the changes
-
-5- Update the submodules of the root repository:
+2- Update the submodules of the root repository:
 
     $ git submodule update --init --recursive --remote
+
+3- Staged the changes: $ git add .
+
+4- Commit the changes: $ git commit -m ""
+
+5- Push the changes
+
+
 
 ### Make change to submodule
 Follow these steps:
