@@ -10,11 +10,11 @@ App to help users take full control of their monthly credit card's expenditures
 
 If you clone normally and forgot to brought submodules:
 
-$ git submodule update --init --recursive
+    $ git submodule update --init --recursive
 
 If you are cloning the repo for the first time
 
-$ git clone --recurse-submodules https://github.com/Stefafrontani/billing-app
+    $ git clone --recurse-submodules https://github.com/Stefafrontani/billing-app
 
 ## Branch Naming
 
