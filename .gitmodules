@@ -2,3 +2,7 @@
 	path = billing-app-web
 	url = https://github.com/Stefafrontani/billing-app-web
 	branch = develop
+[submodule "billing-app-backend--expenditures"]
+	path = billing-app-backend--expenditures
+	url = https://github.com/Stefafrontani/billing-app-backend--expenditures.git
+	branch = develop
