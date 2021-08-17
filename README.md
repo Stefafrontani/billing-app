@@ -6,6 +6,22 @@ App to help users take full control of their monthly credit card's expenditures
 
 ## Setup local environment
 
+### Docker compose
+
+1- Initialize docker compose
+
+  inside _./billing-app_
+  
+  $ docker-compose up
+
+*** _OPTIONAL_ ***
+
+In case migrations dont run:
+
+2- Run migrations inside backend server
+
+  $ docker-compose run babe npm run migrate-up
+
 ### Clone
 
 If you clone normally and forgot to brought submodules:
