@@ -1,14 +1,13 @@
 version: "3.9"
 services:
   baw:
-    container_name: client
+    container_name: baw
     build:
       context: ./billing-app-web
     ports:
       - 3000:3000
     volumes:
-      - ./billing-app-web:/baw
-      - ./billing-app-web/node_modules:/client
+      - ./billing-app-web:/webapp
     command: npm run start
     environment:
       - NODE_ENV=development
