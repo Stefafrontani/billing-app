@@ -13,41 +13,68 @@ services:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
 
-  babedb:
-    container_name: babedb
+  purchasesdb:
+    container_name: purchasesdb
     image: postgres:alpine
     ports:
-      - 5432:5432
+      - "5433:5432"
     env_file:
-      - ./billing-app-backend--expenditures/src/database/.env
+      - ./billing-app-backend--purchases/src/database/.env
     volumes:
-      - ./billing-app-backend--expenditures/src/database/data:/var/lib/postgresql/data
+      - ./billing-app-backend--purchases/src/database/data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U billinguser -d billingdb"]
+      test: ["CMD-SHELL", "pg_isready -U billinguser -d purchasesdb"]
       interval: 5s
       timeout: 5s
       retries: 12
 
-  babe:
-    container_name: babe
+  purchases:
+    container_name: purchases
     build:
-      context: ./billing-app-backend--expenditures
+      context: ./billing-app-backend--purchases
     ports:
       - 4000:4000
     volumes:
-      - ./src:/babe/src
+      - ./billing-app-backend--purchases/src:/purchases/src
+      - ./billing-app-backend--purchases/migrations:/purchases/migrations
     environment:
-      - POSTGRES_HOST=babedb
-      - DATABASE_URL=postgres://billinguser:password@babedb:5432/billingdb
-    # command: # The command docker will execute when starting the container, this command is not allowed to exit, if it does your container will stop
-    #   - sh
-    #   - ./wait-for-it.sh
-    #   - --timeout=30
-    #   - babedb:5432
-    #   - --
-    #   # - sh
-    #   - -c
-    #   - npm run migrate-up && npm run start
+      - POSTGRES_HOST=purchasesdb
+      - DATABASE_URL=postgres://billinguser:password@purchasesdb:5432/purchasesdb
+    command: 
+      - sh
+      - -c
+      - npm run migrate-up && npm run start
     depends_on:
-      babedb:
+      purchasesdb:
         condition: service_healthy
+
+  # Expenditures: initial server setup for example. Not being used.
+  # babe:
+  #   container_name: babe
+  #   build:
+  #     context: ./billing-app-backend--expenditures
+  #   ports:
+  #     - 4000:4000
+  #   volumes:
+  #     - ./src:/babe/src
+  #   environment:
+  #     - POSTGRES_HOST=babedb
+  #     - DATABASE_URL=postgres://billinguser:password@babedb:5432/billingdb
+  #   depends_on:
+  #     babedb:
+  #       condition: service_healthy
+
+  # babedb:
+  #   container_name: babedb
+  #   image: postgres:alpine
+  #   ports:
+  #     - 5432:5432
+  #   env_file:
+  #     - ./billing-app-backend--expenditures/src/database/.env
+  #   volumes:
+  #     - ./billing-app-backend--expenditures/src/database/data:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U billinguser -d billingdb"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 12
