@@ -10,3 +10,7 @@
 	path = billing-app-backend--purchases
 	url = https://github.com/Stefafrontani/billing-app-backend--purchases.git
 	branch = develop
+[submodule "billing-app-backend--payments"]
+	path = billing-app-backend--payments
+	url = https://github.com/Stefafrontani/billing-app-backend--payments.git
+	branch = develop

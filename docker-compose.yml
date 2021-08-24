@@ -48,6 +48,43 @@ services:
       purchasesdb:
         condition: service_healthy
 
+  paymentsdb:
+    container_name: paymentsdb
+    image: postgres:alpine
+    ports:
+      - "5434:5432"
+    env_file:
+      - ./billing-app-backend--payments/src/database/.env
+    volumes:
+      - ./billing-app-backend--payments/src/database/data:/var/lib/postgresql/data
+    depends_on:
+      - "purchases"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U billinguser -d paymentsdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  payments:
+    container_name: payments
+    build:
+      context: ./billing-app-backend--payments
+    ports:
+      - 4001:4001
+    volumes:
+      - ./billing-app-backend--payments/src:/payments/src
+      - ./billing-app-backend--payments/migrations:/payments/migrations
+    environment:
+      - POSTGRES_HOST=paymentsdb
+      - DATABASE_URL=postgres://billinguser:password@paymentsdb:5432/paymentsdb
+    command: 
+      - sh
+      - -c
+      - npm run migrate-up && npm run start
+    depends_on:
+      paymentsdb:
+        condition: service_healthy
+
   # Expenditures: initial server setup for example. Not being used.
   # babe:
   #   container_name: babe
