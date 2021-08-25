@@ -1,0 +1,266 @@
+[33mcommit fa97ac93e25b2d0ff321e2950be69914551fd5d6[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m, [m[1;31morigin/develop[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Wed Aug 25 11:54:16 2021 -0300
+
+    sync__billing-app-backend--purchases__feature--update__new-migration-to-change-amount-datatype
+
+[33mcommit 7f99071e06709ab18528e1b2e1df31fff59e04c5[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Wed Aug 25 11:32:44 2021 -0300
+
+    sync__billing-app-backend--payments__feature--update__new-migration-to-change-amount-datatype
+
+[33mcommit d083dc690384e2879238bf997a0738c77f060110[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Wed Aug 25 10:33:25 2021 -0300
+
+    sync__billing-app-backend--payments__feature--update__create-new-payment-route
+
+[33mcommit ab361b1be19e467318d932bd1dc11681fb6fdcdd[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Wed Aug 25 10:30:21 2021 -0300
+
+    sync__billing-app-backend--purchases__feature__creat-new-purchase-route
+
+[33mcommit 3c2207e4f0339b6dc4b4d5e4260246b33db40d4f[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 15:32:49 2021 -0300
+
+    billing-app-backend--payments__feature--new__create-new-payment-route
+
+[33mcommit 56f4485188da7bb79cf3dd5a40d0b8fcb4c20add[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 14:57:29 2021 -0300
+
+    billing-app-backend--payments__feature--new__update-get-payments-method-route
+
+[33mcommit 6e660d9e07b4d6a0594e52b921fde7a4c53c9197[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 12:18:47 2021 -0300
+
+    sync__billing-app-backend--purchases__feature__get-purchase-by-id-route
+
+[33mcommit fbaa431a2438a0a98bbdf6de29c5c21036ea1897[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 10:57:34 2021 -0300
+
+    sync__billing-app-backend--payments__feature__create-get-payments-route
+
+[33mcommit 9c2c4e887181eebfe0d2341b7599220ac63e5713[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 10:10:51 2021 -0300
+
+    sync__billing-app-backend--purchases__feature__create-get-amounts-route
+
+[33mcommit 64997a0d993792b43ae1ebddee21318abfa1092c[m
+Merge: 9688f7c 291a8b9
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Tue Aug 24 09:22:17 2021 -0300
+
+    Merge pull request #13 from Stefafrontani/billing-app__configuration__initial-setup-payments-microservice
+    
+    billing-app__configuration__initial-setup-payments-microservice
+
+[33mcommit 291a8b9897f9aa75e334edae3df747ede6f82496[m[33m ([m[1;31morigin/billing-app__configuration__initial-setup-payments-microservice[m[33m, [m[1;32mbilling-app__configuration__initial-setup-payments-microservice[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 24 09:21:45 2021 -0300
+
+    billing-app__configuration__initial-setup-payments-microservice
+
+[33mcommit 9688f7ca3af2070e5e0db41661c11baed2332faf[m
+Merge: 9bac1e9 16b09f0
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Sun Aug 22 11:09:40 2021 -0300
+
+    Merge pull request #12 from Stefafrontani/billing-app__configuration__add-module-backend--purchases
+    
+    add submodule purchases to repo and initials etup
+
+[33mcommit 16b09f0ae217d35d12d64549887988597d783517[m[33m ([m[1;31morigin/billing-app__configuration__add-module-backend--purchases[m[33m, [m[1;32mbilling-app__configuration__add-module-backend--purchases[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Sun Aug 22 11:08:18 2021 -0300
+
+    add submodule purchases to repo and initials etup
+
+[33mcommit 9bac1e90fc9edf5cc7e208b1bb98b5b2808ce8c6[m
+Merge: fe95799 fe183a1
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Tue Aug 17 17:07:58 2021 -0300
+
+    Merge pull request #11 from Stefafrontani/billing-app__configuration__docker-compose-fix
+    
+    Fix docker compose hot reload for web app
+
+[33mcommit fe183a15c164fbb4c1c05258cb5aadb3ce20fbc4[m[33m ([m[1;31morigin/billing-app__configuration__docker-compose-fix[m[33m, [m[1;32mbilling-app__configuration__docker-compose-fix[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 17 17:07:31 2021 -0300
+
+    Fix docker compose hot reload for web app
+
+[33mcommit fe9579987709d961a0c50958b39ccf805cddf947[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 17 16:21:11 2021 -0300
+
+    sync__billing-app-backend--expenditures__configuration__docker-compose-setup
+
+[33mcommit a2ea3780eea32924d47966691cf9ff6576bd075e[m
+Merge: ea85ed7 7dd9d42
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Tue Aug 17 16:17:28 2021 -0300
+
+    Merge pull request #10 from Stefafrontani/billing-app__configuration__docker-compose-setup
+    
+    billing-app__configuration__docker-compose-setup
+
+[33mcommit 7dd9d425194e12fa637ce77ad77f4eb72292c5d0[m[33m ([m[1;31morigin/billing-app__configuration__docker-compose-setup[m[33m, [m[1;32mbilling-app__configuration__docker-compose-setup[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Tue Aug 17 16:16:14 2021 -0300
+
+    billing-app__configuration__docker-compose-setup
+
+[33mcommit ea85ed7edc0c574570162d98235426c9d63fa50f[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Mon Aug 16 13:17:44 2021 -0300
+
+    [billing-app-backend--expenditures]__configuration: Dockerize the application backend
+
+[33mcommit 0ac9d7d643d5d296f451dff41b3967f7cc96a0c0[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Wed Aug 11 16:58:33 2021 -0300
+
+    sync__billing-app-backend--expenditures__initial-local-setup
+
+[33mcommit 9d60782f876bc1c289ece367f9d17210dab67545[m
+Merge: a39cf96 c389003
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Mon Aug 9 17:34:53 2021 -0300
+
+    Merge pull request #9 from Stefafrontani/billing-app__configuration__add-module-backend--exprenditures
+    
+    sync__billing-app-backend--expenditures__add-submodule
+
+[33mcommit c389003aa7f483701ce3ba8f84e65869b41814f1[m[33m ([m[1;31morigin/billing-app__configuration__add-module-backend--exprenditures[m[33m, [m[1;32mbilling-app__configuration__add-module-backend--exprenditures[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Mon Aug 9 17:34:08 2021 -0300
+
+    sync__billing-app-backend--expenditures__add-submodule
+
+[33mcommit a39cf96b8402bc59680c7681128269d8ac14c66c[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Mon Aug 9 17:14:56 2021 -0300
+
+    sync__billing-app-web__dockerize-repo
+
+[33mcommit 4fb195684e5e4f7300e44d0f3576a7d594847c71[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Mon Aug 9 16:20:32 2021 -0300
+
+    sync__billing-app-web__cra-typescript-changes
+
+[33mcommit 8076d091d6a2e64a436d4bf8a55c8c027dc07cee[m
+Merge: ce8d00b f8701c4
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Fri Aug 6 12:11:26 2021 -0300
+
+    Merge pull request #8 from Stefafrontani/billing-app__billing-app-web__update
+    
+    Update reference
+
+[33mcommit f8701c469c0909670e2c20ddd35484b6d1b643a6[m[33m ([m[1;31morigin/billing-app__billing-app-web__update[m[33m, [m[1;32mbilling-app__billing-app-web__update[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 12:11:04 2021 -0300
+
+    Update reference
+
+[33mcommit ce8d00b8400829d0ebdf2a3af6e37a866032b773[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 10:53:04 2021 -0300
+
+    Format readme a little bit
+
+[33mcommit 0af6db100d659a661f249fe6fd3b5048e73b2b8f[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 10:51:42 2021 -0300
+
+    Format readme a little bit
+
+[33mcommit 44bb619b65a5df7a4c664aaf7f2f85f7ea72ddd5[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 10:51:12 2021 -0300
+
+    Format readme a little bit
+
+[33mcommit 6522ae6c1fa9206deda45f06f27bed0f400cf7e6[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 10:48:53 2021 -0300
+
+    Format readme a little bit
+
+[33mcommit 4bc155abb3a923a1d21b640bf06ddb31172e683d[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Fri Aug 6 10:48:00 2021 -0300
+
+    Format readme a little bit
+
+[33mcommit b3517c69037dcce00a45137c78afcfd27fa45d56[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 21:43:25 2021 -0300
+
+    Return trackingbranch on billing-app-web to develop
+
+[33mcommit 092abc9b4fe0ea4d78295ef288cf3605bc2de122[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 21:41:16 2021 -0300
+
+    test tracking master branch on billing-app-web
+
+[33mcommit 5868b66945006050da5744f1a28f8230af1c42b2[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 21:38:17 2021 -0300
+
+    Add explanation to read me about working with submodules
+
+[33mcommit 9884a1bb300bda905872126cdc99aafc58a20be7[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 20:10:45 2021 -0300
+
+    sync again
+
+[33mcommit c055e5cb86df566b8f51c9a6c66a145215dccfa0[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 20:04:35 2021 -0300
+
+    Add branch tracked -devleop- to web client submodule
+
+[33mcommit f8fa17094ef2317ef8de5b79995f2e6bfd2fbbee[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 19:58:26 2021 -0300
+
+    sync with web client submodule
+
+[33mcommit 1b10517c57a2af9e43e3d74f10465f332172cfb3[m
+Merge: 99f3d59 a2cee6b
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Thu Aug 5 18:58:31 2021 -0300
+
+    Merge pull request #1 from Stefafrontani/billing-app__configuration__initial-repo-setup
+    
+    Billing app  configuration  initial repo setup
+
+[33mcommit a2cee6baa4085b7e9dab3713855ea0a47b398e42[m[33m ([m[1;31morigin/billing-app__configuration__initial-repo-setup[m[33m, [m[1;32mbilling-app__configuration__initial-repo-setup[m[33m)[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 18:44:48 2021 -0300
+
+    Add submodule for web client
+
+[33mcommit 3321c8c1f38395f31e98b97b87bbcb7c8d8fb941[m
+Author: stefafrontani <stefafrontani@gmail.com>
+Date:   Thu Aug 5 18:44:04 2021 -0300
+
+    Readme: Add branch naming convention and add gitignore file
+
+[33mcommit 99f3d59660c8aacaf3a9c51ddbf1ba0ef712b82e[m
+Author: Stefafrontani <36647246+Stefafrontani@users.noreply.github.com>
+Date:   Thu Aug 5 18:15:38 2021 -0300
+
+    Initial commit
